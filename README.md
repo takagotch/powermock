@@ -1,8 +1,22 @@
 ### powermock
 ---
+https://github.com/powermock/powermock
 
+```java
+@RunWith(PowerMockRunner.class)
+@PrepareForTest( { YourClassWithEgStaticMethod.class } )
+public class YourTestCase {
+}
 
-```
+@PowerMockIgnore("org.myproject.")
+@PrepareForTest(MyClass.class)
+@RunWith(PowerMockRunner.class)
+public class MyTest {
+}
+
+powermock.global-ignore="org.myproject."
+powermock.global-ignore="org.myporject.*","org.3rdpatproject.SomeClass"
+p\mockito.mock-maker-class=mock-aker-inline
 ```
 
 ```
