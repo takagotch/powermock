@@ -17,6 +17,9 @@ public class MyTest {
 powermock.global-ignore="org.myproject."
 powermock.global-ignore="org.myporject.*","org.3rdpatproject.SomeClass"
 p\mockito.mock-maker-class=mock-aker-inline
+/*
+https://github.com/powermock/powermock/wiki/Bypass-Encapsulation
+/*
 ```
 
 ```
