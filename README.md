@@ -32,7 +32,15 @@ https://github.com/powermock/powermock/wiki/Bypass-Encapsulation
 /*
 ```
 
-```
+```java
+// core/src/main/java/org/powermock/core/ClassLocator.java
+package org.powermock.core;
+
+public class ClassLocator extends SecurityManager {
+  public static Class getCallerClass() {
+    return new ClassLocator().getClassContext()[5];
+  }
+}
 ```
 
 ```
